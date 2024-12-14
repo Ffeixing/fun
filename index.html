@@ -1,202 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fun Doubling Technology</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .section {
-            padding: 50px;
-        }
-        /* 第一页背景渐变色 */
-        .section-1 {
-            background: linear-gradient(to right, #a8e3e6, #c1c4f5);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .section-1 h1, .section-1 h2 {
-            margin: 0;
-        }
-        .section-1 h1 {
-            font-size: 50px;
-        }
-        .section-1 h2 {
-            font-size: 24px;
-            color: #333;
-        }
-        /* 第二页背景渐变色 */
-        .section-2 {
-            background: linear-gradient(to right, #e2f7b2, #9ae5da);
-            text-align: left;
-        }
-        .main-products {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .main-products div {
-            text-align: center;
-        }
-        .main-products img {
-            width: 150px;
-            height: 150px;
-        }
-        .product-title {
-            margin-top: 10px;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        /* 第三页背景渐变色 */
-        .section-3 {
-            background: linear-gradient(to right, #f5e1da, #fadadd);
-            text-align: left;
-        }
-        .join-us img {
-            width: 300px;
-        }
-        .team-info {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .team-info a {
-            color: blue;
-            text-decoration: none;
-        }
-        /* 页脚样式 */
-        .footer {
-            background-color: #dae0f3;
-            text-align: left;
-            padding: 20px;
-        }
-        .footer a {
-            color: black;
-            text-decoration: none;
-            margin-right: 20px;
-			}
-
-
-
-			.women a {
-				width:10px;
-				border:10px solid red;
-				color:red;
-				text-align:center;
-        }
-    </style>
+    <title>趣味加倍科技</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">趣味加倍科技</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="qujiayingyong.html">趣加应用</a></li>
+            <li><a href="qujiayinyue.html">趣加音乐</a></li>
+            <li><a href="qujiaai.html">趣加AI</a></li>
+            <li><a href="about.html">日志</a></li>
+        </ul>
+    </nav>
 
-    <!-- 第一页：左右排列的标题部分 -->
-    <div class="section section-1">
-        <h1>Fun Doubling Technology</h1>
-        <h2>趣味加倍科技</h2>
-    </div>
+    <!-- 首页内容 -->
+    <header class="hero">
+        <h1>Hi，趣味加倍</h1>
+    </header>
 
-    <!-- 第二页：产品中心部分 -->
-    <div class="section section-2">
-        <div class="main-products">
-
-            <div>
-                <a href="https://qjyy.mysxl.cn" target="_blank">
-                    <img src="https://static.codemao.cn/pickduck/BJZm_eVpR.png?hash=FhiUR8VAw8GzPW5pUBl_WRAgo7Pq" alt="趣加应用">
-                </a>
-                <div class="product-title">趣加应用</div>
-                <p>致力于优质资源分享</p>
-            </div>
-
-
-
-
-
-
-            <div>
-                <a href="https://ffeixing.github.io/qjyy/app.html?icon=https%3A%2F%2Fstatic.bcmcdn.com%2Fcoco%2Fplayer%2Funstable%2FHJiTaTEsA.image%2Fjpeg%3Fhash%3DFlAagEo0yl_Pgq5ZyAHUN-33k2VW&name=趣加音乐0.0.4&link=https%3A%2F%2Fwwpa.lanzouo.com%2Fi4Hqh2864ybg&pwd=as7c&图片一=https%3A%2F%2Fstatic.bcmcdn.com%2Fcoco%2Fplayer%2Funstable%2FSk6aT6Vj0.image%2Fjpeg%3Fhash%3DFkfwtMl96re5gYxuBlwsqsRDdLTf&图片二=https%3A%2F%2Fstatic.bcmcdn.com%2Fcoco%2Fplayer%2Funstable%2FryeCppVjC.image%2Fjpeg%3Fhash%3DFoxqd0T4g1SsStBUMKhGum1ibU1O&简介=【应用介绍】听--趣加音乐%0A我们的新免费听音乐App，目前已支持网易云、酷狗两大平台的音乐；支持歌词滚动、收藏、查看评论、下载等功能%E3%80%82%0A【最近更新】修复了一些问题%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A外置分享密码：as7c%20%20%20%20%20%20%20%20%20%20%20%20%20" target="_blank">
-                    <img src="https://static.codemao.cn/pickduck/HJylFlVa0.png?hash=FqhUeZHG8pVB5Xr6FWhJae9Jf73P" alt="趣加音乐">
-                </a>
-                <div class="product-title">趣加音乐</div>
-                <p>听一趣加音乐</p>
-            </div>
-
-
-
-
-
-
-
-
-            <div>
-                <a href="https://ffeixing.github.io/qjyy/app.html?icon=https%3A%2F%2Fstatic.bcmcdn.com%2Fcoco%2Fplayer%2Funstable%2FBJxHVddXJe.image%2Fpng%3Fhash%3DFn0NpsOyYzMAL3lyolaWT8VlS3NV&name=趣加AI%201.0.1&link=https%3A%2F%2Fwwpa.lanzouo.com%2FijDav2gq9x0h&pwd=epst&图片一=https%3A%2F%2Fstatic.codemao.cn%2Fcoco%2Fplayer%2Funstable%2FBJLUBKOmye.image%2Fjpeg%3Fhash%3DFjLI-2a4ZxZypvN5qtuhGpDQCR-B&图片二=https%3A%2F%2Fstatic.codemao.cn%2Fcoco%2Fplayer%2Funstable%2FrJrUHKOX1x.image%2Fjpeg%3Fhash%3DFgIIAHoIFRSyqpQskpTDHJA3K43U&简介=【应用介绍】我们全新推出的趣加AI，使用ChatGPT4.0mini官方接口，永久免费，永不限速%20；本App兼容性好，支持安卓4%2B【最近更新】v1.0.1新增：历史记录UI更好看，速度提升2倍，修复部分地区无法打开的问题%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20外置分享密码：epst%20%20%20%20%20%20%20%20%20%20%20%20%20安卓下载链接：https%3A%2F%2Fcloud.06dn.com%2Fs%2Fb4dNTQ（复制到浏览器下载）%20iOS下载链接：https%3A%2F%2Fwww.123pan.com%2Fs%2FsBhZVv-EJZ4H（使用Safari浏览器下载）%20Windows下载链接：https%3A%2F%2Fwww.123pan.com%2Fs%2FsBhZVv-NXZ4H（复制到浏览器下载）" target="_blank">
-                    <img src="https://static.bcmcdn.com/coco/player/unstable/HknV3FpWke.image/png?hash=Fn0NpsOyYzMAL3lyolaWT8VlS3NV" alt="趣加AI">
-                </a>
-                <div class="product-title">趣加AI</div>
-                <p>永久免费ChatGPT4</p>
-
-            </div>
-
-
-
-<div>
-                <a href="https://yh-box.my.canvasite.cn" target="_blank">
-                    <img src="https://creation.codemao.cn/716/appcraft/IMAGE_FL0-2oKUw_1669800121245.png" alt="学易盒子">
-                </a>
-                <div class="product-title">学易盒子</div>
-                <p>易学中学，告别烦恼</p>
-
-            </div>
-
-
-
-
-
-
+    <section class="products">
+        <div class="product" onclick="location.href='qujiayingyong.html';">
+            <img src="https://static.bcmcdn.com/coco/player/unstable/r1obbKlhC.image/png?hash=FhiUR8VAw8GzPW5pUBl_WRAgo7Pq" alt="趣加应用">
+            <h2>趣加应用</h2>
+            <p>致力于优质资源分享</p>
         </div>
-<img src="https://static.codemao.cn/pickduck/rJ1S7b4TR.png?hash=Fsj-_vEoAmWeuj-Ay6-bm_KPwolz" alt="Us">
-    </div>
-
-    <!-- 第三页：加入我们部分 -->
-    <div class="section section-3">
-        <div class="join-us">
-            <img src="https://static.codemao.cn/pickduck/HJFroeNpR.jpeg?hash=FrDaV7IEHC8Mmj79CMp7O2ZOeGVE" alt="Join Us">
-            <p>趣味加倍科技期待你的加入 <a href="https://kaoshi.wjx.top/vm/rQzfkg5.aspx" target="_blank"> 加入我们</a></p>
-
-            <p>推荐掌握的技能：<br>
-                ✅前后端开发知识 （html+css+javascript+vue等；Java、python等）</br>
-                ✅视频剪辑和平面设计（PR、AE、达芬奇等；PS、PPT等）<br>
-                
-
-<br>
-                
-趣味加倍科技Fun Doubling Technology，是个小型组织。最近开发的优质产品有趣加应用、趣加音乐、趣加AI等；以及较早之前的学习平台学易盒子、PC端趣加小工具、ppsmx等；截止2024年8月，趣加应用活跃用户已突破1000人；
-我们的软件基本都是非经营性应用，宗旨是给用户带来好的体验，希望我们的资源库、AI、音乐等更多内容能够对你有帮助；
-如果你对我们的软件感兴趣，欢迎和我们一起探讨、开发新产品，也可以把我们分享给更多同学。
-
-
-</br>
-
-
-
-
-
-</p>
-            <div class="team-info">
-                <strong>金牌团队</strong><br>
-                趣加应用团队  -  优质资源分享、帖子社区、互动评论等； [平台资源管理] [平台互动等维护]<a href="https://qjyy.mysxl.cn" target="_blank">了解更多》</a><br>
-                学易盒子团队  -  拍照搜题、课本点读、学习资料、视频分享等； [平台视频、资源管理][平台互动等维护]<a href="https://yh-box.my.canvasite.cn" target="_blank">了解更多》</a>
-            </div>
+        <div class="product" onclick="location.href='qujiayinyue.html';">
+            <img src="https://static.bcmcdn.com/coco/player/unstable/HJiTaTEsA.image/jpeg?hash=FlAagEo0yl_Pgq5ZyAHUN-33k2VW" alt="趣加音乐">
+            <h2>趣加音乐</h2>
+            <p>听--趣加音乐</p>
         </div>
-    </div>
+        <div class="product" onclick="location.href='qujiaai.html';">
+            <img src="https://static.bcmcdn.com/coco/player/unstable/BJxHVddXJe.image/png?hash=Fn0NpsOyYzMAL3lyolaWT8VlS3NV" alt="趣加AI">
+            <h2>趣加AI</h2>
+            <p>永久免费的ChatGPT</p>
+        </div>
+    </section>
 
-    <!-- 页脚：联系方式 -->
-    <div class="footer">
-        <a href="https://space.bilibili.com/1602042571" target="_blank">Bilibili</a>
-        <a href="https://qm.qq.com/q/Jk6q35JKWQ" target="_blank">QQ</a>
-        <p>Copyright © 2024 趣味加倍. All Rights Reserved</p>
-    </div>
+    <section class="about">
+        <h2>趣味加倍科技期待你的加入</h2>
+        <p>加入我们：<a href="https://kaoshi.wjx.top/vm/rQzfkg5.aspx" target="_blank">点击这里</a></p>
+        
+        <p>推荐掌握的技能：<br>
+            ✅ 前后端开发知识（HTML+CSS+JavaScript+Vue等；Java、Python等）可为我们提供开发思路等<br>
+            ✅ 图文设计（PR、PS等）可为我们管理资源库、html、轮播图、活动等
+        </p>
+        <p>
+            <div class="log-entry">想和我们一起交流讨论？<a href="https://qm.qq.com/cgi-bin/qm/qr?authKey=5z2ScOfVqEATFJxh8ddHXXd8BjW%2BWoT3oqYTXezolaBaEeyTfL8L9dY9ZRt4X%2B3Z&k=j5PqrSdDyLryfZgrW4UL-osMTlD4HrW3&noverify=0#">戳这里</a></div>
+        </p>
+    
+        <p>•趣味加倍科技是以非经营性目的软件平台，近期优质内容有趣加应用、趣加音乐、趣加AI等。希望我们的软件对你有帮助，希望你能天天开心！</p>
+    </section>
 
+    <!-- 页脚 -->
+    <footer>
+        Copyright © 2025 趣味加倍科技. All Rights Reserved
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-links').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

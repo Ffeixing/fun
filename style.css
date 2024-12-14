@@ -1,0 +1,213 @@
+/* 全局重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 导航栏样式 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: #007BFF;
+    color: #fff;
+}
+
+/* 首页英雄区 */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #f9f9f9;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* 首页产品区 */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    width: 280px; /* 缩小图片容器 */
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%; /* 缩小图片大小为容器大小 */
+    height: auto;
+    border-radius: 12px;
+}
+
+.product h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.product p {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* 通用按钮样式 */
+button, a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px; /* 圆角矩形 */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover, a.button:hover {
+    background: #0056b3;
+}
+
+/* 下载卡片区域 */
+.download-card {
+    text-align: center;
+    margin: 30px 10px;
+}
+
+.download-card a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1em;
+    color: #fff;
+    background: #28a745;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.download-card a:hover {
+    background: #218838;
+}
+
+/* 嵌入的iframe */
+iframe {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* 关于我们部分 */
+.about {
+    text-align: center;
+    margin: 40px 20px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    margin-bottom: 10px;
+}
+
+/* 日志区域 */
+.log {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.log-entry {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f0f0f0;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
