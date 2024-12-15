@@ -46,19 +46,6 @@ footer {
 }
 
 
-/* 全局重置样式 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background: #fff;
-    color: #333;
-    line-height: 1.6;
-}
 
 /* 导航栏样式 */
 .navbar {
