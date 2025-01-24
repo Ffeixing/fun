@@ -3,78 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>趣味加倍科技</title>
+    <title>日志</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 导航栏 -->
     <nav class="navbar">
-        <div class="logo">趣味加倍科技</div>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="index.html">首页</a></li>
-            <li><a href="qujiayingyong.html">趣加应用</a></li>
-            <li><a href="qujiayinyue.html">趣加音乐</a></li>
-            <li><a href="qujiaai.html">趣加AI</a></li>
-            <li><a href="about.html">日志</a></li>
-        </ul>
+        <a href="index.html" class="return-home">返回首页</a>
     </nav>
 
-    <!-- 首页内容 -->
-    <header class="hero">
-        <h1>Hi，趣味加倍</h1>
-        <H2>趣味加倍，效率加倍，体验加倍</H2>
-    </header>
+    <div class="log">
+        <div class="log-entry">2025-01-23:趣加音乐0.0.7版本更新<br>1.修复：播放页面动画无限循环问题<br>2.新增：播放页面支持自定义颜色主题<br></div>
+        <div class="log-entry">2025-01-17:趣加应用v0.3.5版本更新<br>1.修复：资源载入慢，速度提升5倍<br>2.优化：页面过渡动画<br></div>
+        <div class="log-entry">2025-01-17:趣加音乐v0.0.6版本更新<br>1.修复：部分页面无法正常退出问题版本更新<br>2.新增：排行榜<br>3.优化：页面过渡动画<br></div>
+        <div class="log-entry">2025-01-05:趣加音乐v0.0.5版本更新<br>1.更新收藏、历史、下载操作逻辑<br>2.修复已知问题</div>
+        <div class="log-entry">2024-12-31:祝各位新年快乐，本次更新：<br>1.趣加应用“一起跨年”板块2025重归上线！<br>2.“趣加资源”更新若干项目，预计下周上线</div>
+        <div class="log-entry">2024-12-29:趣加资源更新了若干资源，预计两周后发布</div>
+        <div class="log-entry">2024-12-22:“趣加应用网页版”即将全新改版为“趣加资源”，收录诸多PC应用；本次更新：<br>1.“趣加资源”基本框架完成，附内测链接；<br>2.新增“Office软件”“Adoble软件”“音视频处理工具”“图片处理工具”“文档处理工具”“免费影音”分类。资源火热连载中～<a href="http://qujia.us.kg/newresource/">戳这里</a></div>
+        <div class="log-entry">2024-12-15:Hi各位，趣被加倍科技网页版以全新的面貌和大家见面了。已整合趣加音乐、趣加应用、趣加AI等多项功能。2024-12起软件等更新日志都会出现在这里，希望和我们一起交流讨论？<a href="https://qm.qq.com/cgi-bin/qm/qr?authKey=5z2ScOfVqEATFJxh8ddHXXd8BjW%2BWoT3oqYTXezolaBaEeyTfL8L9dY9ZRt4X%2B3Z&k=j5PqrSdDyLryfZgrW4UL-osMTlD4HrW3&noverify=0#">戳这里</a>·希望我们的软件对你有帮助，希望你能天天开心！</div>
+        <div class="log-entry"> 2024-12-14:网页版全新升级版上线。</div>
+    </div>
 
-    <section class="products">
-        <div class="product" onclick="location.href='qujiayingyong.html';">
-            <img src="https://static.bcmcdn.com/coco/player/unstable/r1obbKlhC.image/png?hash=FhiUR8VAw8GzPW5pUBl_WRAgo7Pq" alt="趣加应用">
-            <h2>趣加应用</h2>
-            <p>致力于优质资源分享</p>
-        </div>
-        <div class="product" onclick="location.href='qujiayinyue.html';">
-            <img src="https://static.codemao.cn/pickduck/ByCLIouPyl.png?hash=FgfRq1i8t0NO_YZVRbl_XPi3pUMe" alt="趣加音乐">
-            <h2>趣加音乐</h2>
-            <p>听--趣加音乐</p>
-        </div>
-        <!--
-            <div class="product" onclick="location.href='qujiaai.html';">
-            <img src="https://static.bcmcdn.com/coco/player/unstable/BJxHVddXJe.image/png?hash=Fn0NpsOyYzMAL3lyolaWT8VlS3NV" alt="趣加AI">
-            <h2>趣加AI</h2>
-            <p>永久免费的ChatGPT</p>
-        </div>
-        -->
-        <div class="product" onclick="location.href='https://qujia.us.kg/newresource/';">
-            <img src="https://static.codemao.cn/pickduck/HJHoZhdDyg.png?hash=FtGvmDasLASOF5rXUb0b09rfHGLz" alt="趣加AI">
-            <h2>趣加资源</h2>
-            <p>「2025内测」全新资源库forPC</p>
-        </div>
-    </section>
-
-    <section class="about">
-        <h2>趣味加倍科技期待你的加入</h2>
-        <a href="https://kaoshi.wjx.top/vm/rQzfkg5.aspx" target="_blank">加入我们：戳这里</a>
-        
-        <p>推荐掌握的技能：<br>
-            ✅ 前后端开发知识（HTML+CSS+JavaScript+Vue等；Java、Python等）可为我们提供开发思路等<br>
-            ✅ 图文设计（PR、PS等）可为我们管理资源库、轮播图、活动等
-        </p>
-        <p>
-            <div class="log-entry">想和我们一起交流讨论？<a href="https://qm.qq.com/cgi-bin/qm/qr?authKey=5z2ScOfVqEATFJxh8ddHXXd8BjW%2BWoT3oqYTXezolaBaEeyTfL8L9dY9ZRt4X%2B3Z&k=j5PqrSdDyLryfZgrW4UL-osMTlD4HrW3&noverify=0#">戳这里</a></div>
-        </p>
-    
-        <p>•趣味加倍科技是以非经营性目的软件平台，近期优质内容有趣加应用、趣加音乐、趣加AI等。希望我们的软件对你有帮助，希望你能天天开心！</p>
-    </section>
-
-    <!-- 页脚 -->
     <footer>
         Copyright © 2025 趣味加倍科技. All Rights Reserved
     </footer>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById('nav-links').classList.toggle('active');
-        }
-    </script>
 </body>
 </html>
