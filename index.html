@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>趣味加倍科技</title>
     <link rel="stylesheet" href="style.css">
+        <script>
+        window.onload = function() {
+            // 检测是否为移动设备
+            function isMobile() {
+                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            }
+
+            if (isMobile()) {
+                // 如果是移动设备，跳转到指定链接
+                window.location.href = "https://jqyy.store";
+            }
+        };
+    </script>
 </head>
 <body>
     <!-- 导航栏 -->
